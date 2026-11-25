@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>파인드머니 홈 · 회원</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="screen">
+<div class="statusbar" aria-hidden="true">
+  <img class="time" src="assets/img/sb_time.svg" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/0d11c2f0-efb6-4f6e-abb4-c1421248ec36.svg'" alt="">
+  <div class="sys"><img class="" src="assets/img/sb_signal.svg" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/6ff9f431-029e-41d0-9a97-29835c208d48.svg'" alt=""><img class="" src="assets/img/sb_wifi.svg" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/33d01caf-5350-43bb-9b9a-a939e5516e45.svg'" alt=""><img class="" src="assets/img/sb_battery.svg" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/b6c4540b-6af8-4047-8b20-dbec760b879d.svg'" alt=""></div>
+</div>
+<header class="header">
+  <a href="home-guest.html" aria-label="Find Money 홈"><img src="assets/icons/logo.svg" width="156" height="32" alt=""></a>
+  <div class="hdr-icons">
+    <a class="hdr-btn" href="#" aria-label="관심 물건 12건"><img src="assets/icons/hdr_heart.svg" width="27" height="24" alt=""><span class="badge">12</span></a>
+    <a class="hdr-btn" href="#" aria-label="알림 2건"><img src="assets/icons/hdr_bell.svg" width="24" height="24" alt=""><span class="badge">2</span></a>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <p class="lead">분석부터 투자까지 나만의 자산 관리 비법</p>
+  <h1 class="bar"><img src="assets/icons/sparkle.svg" width="18" height="18" alt=""><b>AI 비서 헤티의 추천 물건</b></h1>
+  <img class="mascot" src="assets/img/hero_mascot.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/e0f004bd-a755-46ae-86e6-f3ad79d672a3'" alt="">
+</section>
+<section class="reco" aria-label="오늘의 헤티 추천">
+  <div class="track hscroll" id="reco-track">
+    <article class="rcard">
+      <div class="top">
+        <div class="r1">
+          <div class="when"><span class="dday">D-7</span><span class="date">11.18(수) 10:00</span></div>
+          <button class="like40" aria-label="관심 물건에 담기"><img src="assets/icons/heart18.svg" width="18" height="18" alt=""></button>
+        </div>
+        <div class="r2">
+          <div class="photo shade"><img class="" src="assets/img/photo.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899'" alt=""></div>
+          <div class="info">
+            <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+            <h3>서울 서초동베스트 원주건축물</h3>
+          </div>
+        </div>
+        <div class="meta"><span>서초동• 202호 • 55.56m2 . 유찰 3회</span><span>2025타경311• 서울중앙지법</span></div>
+      </div>
+      <div class="mid">
+        <div class="profit">
+          <div class="row"><span class="k">예상 수익 · 세후</span><span class="pill y">수익률 87%</span></div>
+          <div class="v">5억 3,337만원</div>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="l"><span>준비 금액</span><b>12억 6,531만원</b></div>
+        <span class="pill g">낙찰 가능성 70%</span>
+      </div>
+    </article>
+    <article class="rcard">
+      <div class="top">
+        <div class="r1">
+          <div class="when"><span class="dday">D-7</span><span class="date">11.18(수) 10:00</span></div>
+          <button class="like40" aria-label="관심 물건에 담기"><img src="assets/icons/heart18.svg" width="18" height="18" alt=""></button>
+        </div>
+        <div class="r2">
+          <div class="photo shade"><img class="" src="assets/img/photo.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899'" alt=""></div>
+          <div class="info">
+            <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+            <h3>서울 서초동베스트 원주건축물</h3>
+          </div>
+        </div>
+        <div class="meta"><span>서초동• 202호 • 55.56m2 . 유찰 3회</span><span>2025타경311• 서울중앙지법</span></div>
+      </div>
+      <div class="mid">
+        <div class="profit">
+          <div class="row"><span class="k">예상 수익 · 세후</span><span class="pill y">수익률 87%</span></div>
+          <div class="v">5억 3,337만원</div>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="l"><span>준비 금액</span><b>12억 6,531만원</b></div>
+        <span class="pill g">낙찰 가능성 70%</span>
+      </div>
+    </article>
+    <article class="rcard">
+      <div class="top">
+        <div class="r1">
+          <div class="when"><span class="dday">D-7</span><span class="date">11.18(수) 10:00</span></div>
+          <button class="like40" aria-label="관심 물건에 담기"><img src="assets/icons/heart18.svg" width="18" height="18" alt=""></button>
+        </div>
+        <div class="r2">
+          <div class="photo shade"><img class="" src="assets/img/photo.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899'" alt=""></div>
+          <div class="info">
+            <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+            <h3>서울 서초동베스트 원주건축물</h3>
+          </div>
+        </div>
+        <div class="meta"><span>서초동• 202호 • 55.56m2 . 유찰 3회</span><span>2025타경311• 서울중앙지법</span></div>
+      </div>
+      <div class="mid">
+        <div class="profit">
+          <div class="row"><span class="k">예상 수익 · 세후</span><span class="pill y">수익률 87%</span></div>
+          <div class="v">5억 3,337만원</div>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="l"><span>준비 금액</span><b>12억 6,531만원</b></div>
+        <span class="pill g">낙찰 가능성 70%</span>
+      </div>
+    </article>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+<section class="ad2">
+  <div class="banner">
+    <div class="pic"><span class="crop " style="width:89px;height:82px"><img src="assets/img/hetty_ad.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/c98ba009-14ce-4528-83cc-46f92ffff1ae'" alt="" style="width:115.7%;height:100.5%;left:-9%;top:-0.2%"></span></div>
+    <div class="txt"><h2>나한테 딱 맞는 물건을 찾아볼까요?</h2><a class="btn-y" href="#">조건 입력하기<img src="assets/icons/chevron.svg" width="16" height="16" alt=""></a></div>
+  </div>
+</section>
+<section class="cats tight">
+  <div class="card">
+    <h2>10가지 종류 골라 보기</h2>
+    <div class="grid">
+      <div class="row"><a href="#"><span class="crop " style="width:40px;height:40px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:222.91%;height:445.82%;left:-7.74%;top:0%"></span>아파트</a><a href="#"><span class="crop " style="width:40px;height:40px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:220%;height:440%;left:-112.5%;top:0%"></span>빌라</a><a href="#"><span class="crop " style="width:43px;height:38px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:225.64%;height:517.65%;left:-7.69%;top:-226.47%"></span>단독·다가구</a><a href="#"><span class="crop " style="width:40px;height:40px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:220%;height:440%;left:-5%;top:-97.5%"></span>오피스텔</a><a href="#"><span class="crop " style="width:38px;height:36px"><img src="assets/img/sprite2.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/fa54ac1b-c238-4e78-b812-3b0daa248d4f'" alt="" style="width:125%;height:266.67%;left:-12.81%;top:0%"></span>상가·업무</a></div>
+      <div class="row"><a href="#"><span class="crop " style="width:34px;height:37px"><img src="assets/img/sprite3.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/42a6e7dc-5bdf-4f8d-a729-4dc4693ccc95'" alt="" style="width:197.06%;height:362.16%;left:-97.06%;top:-85.14%"></span>공장·창고</a><a href="#"><span class="crop " style="width:39px;height:35px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:264%;height:598.43%;left:-17.86%;top:-376.72%"></span>토지</a><a href="#"><span class="crop " style="width:38px;height:33px"><img src="assets/img/sprite1.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/55e0446d-de3e-462e-8531-1fe076515df2'" alt="" style="width:231.58%;height:533.33%;left:-121.05%;top:-330.3%"></span>차량</a><a href="#"><span class="crop " style="width:41px;height:32px"><img src="assets/img/sprite2.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/fa54ac1b-c238-4e78-b812-3b0daa248d4f'" alt="" style="width:121.21%;height:307.69%;left:-10%;top:-203.85%"></span>중장비</a><a href="#"><span class="crop " style="width:33px;height:33px"><img src="assets/img/sprite3.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/42a6e7dc-5bdf-4f8d-a729-4dc4693ccc95'" alt="" style="width:216.13%;height:432.26%;left:-112.9%;top:-246.77%"></span>전체</a></div>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="sec items pop">
+  <h2 class="sec-title">지금 인기있는 물건</h2>
+  <div class="track hscroll">
+    <article class="icard">
+      <div class="r1"><span class="dday">D-13</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo shade" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"><span class="crop " style="width:140px;height:84px"><img src="assets/img/photo_a.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/223503e0-9a57-4e1c-808c-dd7c19e1360e'" alt="" style="width:100%;height:132.7%;left:0%;top:-0.3%"></span></div>
+      <div class="chips"><span class="chip">아파트</span><span class="chip">경매</span></div>
+      <div class="name"><b>부산 해운대 에스케이뷰</b><span>101동 303호 · 2025타경5716</span></div>
+      <div class="box"><span>예상 수익 · 세후</span><b class="">1억 3,375만원</b></div>
+      <div class="r5"><span>내 돈</span><b>1억 2,836만원</b></div>
+    </article>
+    <article class="icard">
+      <div class="r1"><span class="dday">D-8</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo shade" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"><span class="crop " style="width:141px;height:84px"><img src="assets/img/photo_b.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/ead9a19f-7760-4058-ac72-2781a08cb11c'" alt="" style="width:111.3%;height:184.9%;left:-11.3%;top:-4.9%"></span></div>
+      <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+      <div class="name"><b>서울 세영빌라</b><span>비동 301호 · 2025타경104104</span></div>
+      <div class="box"><span>예상 수익 · 세후</span><b class="">9,306만원</b></div>
+      <div class="r5"><span>내 돈</span><b>2,548만원</b></div>
+    </article>
+    <article class="icard">
+      <div class="r1"><span class="dday">D-13</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo shade" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"><span class="crop " style="width:140px;height:84px"><img src="assets/img/photo_a.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/223503e0-9a57-4e1c-808c-dd7c19e1360e'" alt="" style="width:100%;height:132.7%;left:0%;top:-0.3%"></span></div>
+      <div class="chips"><span class="chip">아파트</span><span class="chip">경매</span></div>
+      <div class="name"><b>부산 해운대 에스케이뷰</b><span>101동 303호 · 2025타경5716</span></div>
+      <div class="box"><span>예상 수익 · 세후</span><b class="red2">1억 3,375만원</b></div>
+      <div class="r5"><span>내 돈</span><b>1억 2,836만원</b></div>
+    </article>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="ad">
+  <div class="banner">
+    <div class="txt"><h2>경매 처음이세요?</h2><p>5단계로 배우는 파인드머니 경매 가이드</p></div>
+    <a class="btn-y" href="#">가이드 보기<img src="assets/icons/chevron.svg" width="16" height="16" alt=""></a>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="sec items">
+  <h2 class="sec-title">소액으로 가능한 물건</h2>
+  <div class="track hscroll">
+    <article class="icard">
+      <div class="r1"><span class="dday">D-8</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"></div>
+      <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+      <div class="name"><b>서울 세영빌라</b><span>비동 301호 · 2025타경104104</span></div>
+      <div class="box"><span>예상 수익 · 세후</span><b class="">9,306만원</b></div>
+      <div class="r5"><span>내 돈</span><b>1억 2,836만원</b></div>
+    </article>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="sec items">
+  <h2 class="sec-title">감정가 반값 이하 물건</h2>
+  <div class="track hscroll">
+    <article class="icard">
+      <div class="r1"><span class="dday">유찰 3회</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"></div>
+      <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+      <div class="name"><b>부산 해운대 에스케이뷰</b><span>비동 301호 · 2025타경104104</span></div>
+      <div class="box"><span>감정가 대비</span><b class="red">-51%</b></div>
+      <div class="r5"><span>최저가</span><b>4억 2,836만원</b></div>
+    </article>
+    <article class="icard">
+      <div class="r1"><span class="dday">유찰 3회</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"></div>
+      <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+      <div class="name"><b>부산 해운대 에스케이뷰</b><span>비동 301호 · 2025타경104104</span></div>
+      <div class="box"><span>감정가 대비</span><b class="red">-51%</b></div>
+      <div class="r5"><span>최저가</span><b>4억 2,836만원</b></div>
+    </article>
+    <article class="icard">
+      <div class="r1"><span class="dday">유찰 3회</span><button class="like24" aria-label="관심 물건에 담기"><img src="assets/icons/heart14.svg" width="14" height="14" alt=""></button></div>
+      <div class="photo" style="background-image:url(assets/img/photo.png),url(https://www.figma.com/api/mcp/asset/31d4a4f4-bf0e-4ffa-a7a4-4bda59827899)"></div>
+      <div class="chips"><span class="chip">빌라</span><span class="chip">경매</span></div>
+      <div class="name"><b>부산 해운대 에스케이뷰</b><span>비동 301호 · 2025타경104104</span></div>
+      <div class="box"><span>감정가 대비</span><b class="red2">-51%</b></div>
+      <div class="r5"><span>최저가</span><b>4억 2,836만원</b></div>
+    </article>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="sec">
+  <h2 class="sec-title">오늘 새로 나온 물건</h2>
+  <div class="empty"><span class="crop " style="width:48px;height:59px"><img src="assets/img/hetty.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/5f5e34b9-8c8b-4209-89ec-3ffb1d4d4b68'" alt="" style="width:302.7%;height:211.9%;left:-137%;top:-111.9%"></span><p>조건에 맞는 물건이 없어요</p></div>
+</section>
+<div class="gap"></div>
+<section class="sec">
+  <h2 class="sec-title">지역별 경매 물건</h2>
+  <div class="regions"><a class="region on" href="#"><span>서울</span><b>8</b></a><a class="region" href="#"><span>경기</span><b>0</b></a><a class="region" href="#"><span>인천</span><b>0</b></a><a class="region on" href="#"><span>부산</span><b>2</b></a><a class="region" href="#"><span>대구</span><b>0</b></a><a class="region" href="#"><span>대전</span><b>0</b></a><a class="region" href="#"><span>광주</span><b>0</b></a><a class="region" href="#"><span>울산</span><b>0</b></a><a class="region" href="#"><span>세종</span><b>0</b></a><a class="region" href="#"><span>강원</span><b>0</b></a><a class="region" href="#"><span>충북</span><b>0</b></a><a class="region" href="#"><span>충남</span><b>0</b></a><a class="region" href="#"><span>전북</span><b>0</b></a><a class="region" href="#"><span>전남</span><b>0</b></a><a class="region" href="#"><span>경북</span><b>0</b></a><a class="region" href="#"><span>경남</span><b>0</b></a><a class="region" href="#"><span>제주</span><b>0</b></a><a class="btn-y" href="#">전체 물건<img src="assets/icons/right_dark.svg" width="16" height="16" alt=""></a></div>
+</section>
+<div class="gap"></div>
+<section class="sec">
+  <h2 class="sec-title">이번 주 입찰된 물건</h2>
+  <div class="days"><button class=on aria-pressed=true><b>0</b><span>오늘</span></button><button><b>0</b><span>내일</span></button><button><b>0</b><span>목</span></button><button><b>0</b><span>금</span></button><button><b>0</b><span>월</span></button></div>
+  <div class="empty"><span class="crop " style="width:48px;height:59px"><img src="assets/img/hetty.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/5f5e34b9-8c8b-4209-89ec-3ffb1d4d4b68'" alt="" style="width:302.7%;height:211.9%;left:-137%;top:-111.9%"></span><p>조건에 맞는 물건이 없어요</p></div>
+</section>
+<div class="gap"></div>
+<section class="sec brief">
+  <h2 class="sec-title">낙찰 브리핑</h2>
+  <div class="card">
+    <div class="head2">
+      <div class="hd"><p><b>11/16(월) 개찰 결과</b><span> · </span><span class="s">매일 아침 7시 갱신</span></p></div>
+      <div class="lead2"><b>낙찰률 36.6%</b><p>최근 30개 개찰일 평균보다 <em>1.9%p </em>높았어요</p></div>
+    </div>
+    <div class="stats2">
+      <div><span>낙찰률</span><b>36.6%</b><span class="pill up">▲ 1.9%p</span></div>
+      <div><span>평균 낙찰가율</span><b>57.6%</b><span class="pill down">▼ 1.2%p</span></div>
+    </div>
+    <div class="chartwrap">
+      <div class="legend"><span><i></i>낙찰</span><span><i class="f"></i>유찰</span><span><i class="l"></i>평균 낙찰가율</span><span><i class="d m"></i>30일 평균</span></div>
+      <svg class="chart" viewBox="0 0 307 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="최근 7개 개찰일 낙찰·유찰 건수와 평균 낙찰가율"><path d="M0 30H307" stroke="#6067F6" stroke-width="2" stroke-linecap="round" stroke-dasharray="3.01 3.01" stroke-dashoffset="1.505"/><rect x="7" y="63" width="28" height="55" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="7" y="98.2" width="28" height="19.8" fill="#CACACA"/><rect x="51.2" y="68.5" width="28" height="49.5" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="51.2" y="100.4" width="28" height="17.6" fill="#CACACA"/><rect x="95.4" y="52" width="28" height="66" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="95.4" y="93.25" width="28" height="24.75" fill="#CACACA"/><rect x="139.6" y="80.6" width="28" height="37.4" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="139.6" y="104.8" width="28" height="13.2" fill="#CACACA"/><rect x="183.8" y="55.3" width="28" height="62.7" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="183.8" y="94.35" width="28" height="23.65" fill="#CACACA"/><rect x="228" y="69.6" width="28" height="48.4" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="228" y="100.4" width="28" height="17.6" fill="#CACACA"/><rect x="272.2" y="60.25" width="28" height="57.75" rx="4" fill="#CCCED1" fill-opacity="0.3"/><rect x="272.2" y="96.55" width="28" height="21.45" fill="#6067F6"/><path d="M21 38L65.2 42L109.4 22L153.6 58L197.8 26L242 36L286.2 46" stroke="#395066" stroke-width="1.8" stroke-linejoin="round"/><circle cx="21" cy="38" r="3" fill="#395066"/><circle cx="65.2" cy="42" r="3" fill="#395066"/><circle cx="109.4" cy="22" r="3" fill="#395066"/><circle cx="153.6" cy="58" r="3" fill="#395066"/><circle cx="197.8" cy="26" r="3" fill="#395066"/><circle cx="242" cy="36" r="3" fill="#395066"/><circle cx="286.2" cy="46" r="4" fill="#6067F6"/></svg>
+      <div class="xaxis"><span>6</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span class=on>16</span></div>
+    </div>
+    <div class="stats3">
+      <div><span>낙찰</span><b>117건</b></div><div><span>유찰</span><b>203건</b></div><div><span>평균 응찰</span><b>4.2명</b></div>
+    </div>
+  </div>
+</section>
+<section class="rates">
+  <div class="card">
+    <div class="hd"><h2>지역별 낙찰가율</h2><span>최근 낙찰 832건 · 감정가 대비</span></div>
+    <div class="rgrid"><a class="rate" href="#"><span>서울</span><b>81.9%</b></a><a class="rate" href="#"><span>경기</span><b>79.4%</b></a><a class="rate" href="#"><span>인천</span><b>83.1%</b></a><a class="rate" href="#"><span>부산</span><b>70.6%</b></a><a class="rate dim" href="#"><span>대구</span><b>80.8%</b></a><a class="rate" href="#"><span>대전</span><b>57.5%</b></a><a class="rate dim" href="#"><span>광주</span><b>82.8%</b></a><a class="rate" href="#"><span>울산</span><b>78.4%</b></a><a class="rate dim" href="#"><span>세종</span><b>84.2%</b></a><a class="rate" href="#"><span>강원</span><b>83.3%</b></a><a class="rate" href="#"><span>충북</span><b>84.9%</b></a><a class="rate dim" href="#"><span>충남</span><b>81.7%</b></a><a class="rate dim" href="#"><span>전북</span><b>80%</b></a><a class="rate dim" href="#"><span>전남</span><b>80.8%</b></a><a class="rate" href="#"><span>경북</span><b>83.5%</b></a><a class="rate" href="#"><span>경남</span><b>80.3%</b></a><a class="rate dim" href="#"><span>제주</span><b>86.9%</b></a></div>
+    <h3>용도별 낙찰가율</h3>
+    <div class="bars"><div><span>아파트</span><i style="--v:84.1%"></i><b>84.1%</b></div><div><span>상가</span><i style="--v:60.4%"></i><b>60.4%</b></div><div><span>토지</span><i style="--v:75%"></i><b>75%</b></div><div><span>오피스텔</span><i style="--v:68.2%"></i><b>68.2%</b></div><div><span>빌라</span><i style="--v:79.2%"></i><b>79.2%</b></div><div><span>단독·다가구</span><i style="--v:79%"></i><b>79%</b></div></div>
+    <p class="note">연한 칸은 낙찰 20건 미만이라 참고용이에요 · 지역을 누르면 그 지역 물건을 보여 드려요</p>
+  </div>
+</section>
+<section class="sec hit">
+  <div class="card">
+    <div class="top">
+      <span class="crop " style="width:80px;height:89px"><img src="assets/img/hetty_hit.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/8b3f2a92-c6d8-4e31-8555-2f94421b88a9'" alt="" style="width:259.9%;height:200.4%;left:-78.9%;top:0%"></span>
+      <div><p>헤티 분석, 얼마나 맞았을까요</p><div><h2>헤티 수익 판정 적중률</h2><b>93.5%</b></div></div>
+    </div>
+    <p class="desc">지난 판정 97,673건 중 91,327건이 실제 결과와 맞았어요 · 같은 지역 · 유형 · 가격대 · 회차 기준</p>
+    <div class="btns">
+      <a class="btn-y" href="#"><span>적중률이란?</span><img src="assets/icons/right_hit.svg" width="16" height="16" alt=""></a>
+      <a class="btn-y" href="#"><span>예측 성공 사례</span><img src="assets/icons/right_hit.svg" width="16" height="16" alt=""></a>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+<section class="sec consult">
+  <div class="card">
+    <div class="hd"><h2>경매 무료상담</h2><a class="more" href="#">더보기<img src="assets/icons/right_more.svg" width="16" height="16" alt=""></a></div>
+    <ul class="qa"><li><a href="#"><em>답변 완료</em><span>말소기준권리보다 앞선 전세권이 있으면 인수하나요</span></a></li><li><a href="#"><em>답변 완료</em><span>전입일이 근저당과 같은 날이면 대항력이 있나요</span></a></li><li><a href="#"><em>답변 완료</em><span>점유자가 연락을 안 받는데 명도는 어떻게 시작하나요</span></a></li><li><a href="#"><em>답변 완료</em><span>경락잔금대출은 감정가 기준인가요, 낙찰가 기준인가요</span></a></li><li><a href="#"><em>답변 완료</em><span>낙찰받고 1년 안에 팔면 양도세가 얼마나 되나요</span></a></li></ul>
+    <a class="btn-y cta" href="#">질문하기<img src="assets/icons/chat.svg" width="18" height="18" alt=""></a>
+  </div>
+</section>
+<section class="sec steps">
+  <h2 class="sec-title">처음이라면 이 순서로</h2>
+  <div class="card"><ol><li><a href="#"><i>1</i><div><b>물건 고르기</b><span>수익률 · 권리 판정 보는 법</span></div><img src="assets/icons/right_step.svg" width="16" height="16" alt=""></a></li><li><a href="#"><i>2</i><div><b>권리 확인</b><span>인수 권리가 있는지</span></div><img src="assets/icons/right_step.svg" width="16" height="16" alt=""></a></li><li><a href="#"><i>3</i><div><b>입찰가 정하기</b><span>최소 · 추천 · 최대</span></div><img src="assets/icons/right_step.svg" width="16" height="16" alt=""></a></li><li><a href="#"><i>4</i><div><b>입찰 당일</b><span>보증금 10% · 준비물</span></div><img src="assets/icons/right_step.svg" width="16" height="16" alt=""></a></li><li><a href="#"><i>5</i><div><b>낙찰 후</b><span>잔금 · 명도 · 매도</span></div><img src="assets/icons/right_step.svg" width="16" height="16" alt=""></a></li></ol></div>
+</section>
+<section class="sec videos">
+  <h2 class="sec-title">유용한 경매 영상</h2>
+  <div class="track hscroll">
+    <a class="video" href="#"><div class="thumb"><span class="playbtn"><img src="assets/icons/play.svg" width="18" height="18" alt=""></span><time>35:21</time></div><b>서울 집들이 경매로 쏟아지는 의외의 이유</b><span>책과삶</span></a>
+    <a class="video" href="#"><div class="thumb"><span class="playbtn"><img src="assets/icons/play.svg" width="18" height="18" alt=""></span></div><b>&quot;다가구경매&quot; 역대급 물주 도전하세요</b><span>공물주</span></a>
+  </div>
+  <p class="note">외부 유튜브 채널 영상이에요. 영상 내용은 각 채널의 의견이에요.</p>
+</section>
+<section class="ask">
+  <div class="card">
+    <div class="top">
+      <span class="crop " style="width:80px;height:88px"><img src="assets/img/hetty.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/5f5e34b9-8c8b-4209-89ec-3ffb1d4d4b68'" alt="" style="width:259.3%;height:200.8%;left:-157.2%;top:-5%"></span>
+      <div><h2>내가 원하는 물건만, <br>헤티에게 추천받기</h2><p>지역 · 예산 · 유형을 말하면 헤티가 조건에 맞는 물건을 골라 드려요</p></div>
+    </div>
+    <div class="body">
+      <div class="sugg"><button>이번 주 입찰</button><button>서울 아파트 5억 이하</button><button>내 돈 5천으로 살 수 있는 거</button></div>
+      <a class="btn-y cta" href="#">헤티톡으로 찾기<img src="assets/icons/chatbubble.svg" width="22" height="22" alt=""></a>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+<nav class="floating" aria-label="하단 메뉴">
+  <div class="glass tabbar">
+    <a class="on" href="#" aria-current="page"><img src="assets/icons/tab_home.svg" width="24" height="24" alt="">홈</a>
+    <a href="#"><img src="assets/icons/tab_search.svg" width="24" height="24" alt="">탐색</a>
+    <a class="wide" href="#"><img src="assets/icons/tab_gavel.svg" width="24" height="24" alt="">낙찰 브리핑</a>
+    <a href="#"><img src="assets/icons/tab_user.svg" width="24" height="24" alt="">MY</a>
+  </div>
+  <a class="glass talk" href="#"><span class="av"><span class="crop " style="width:53px;height:58px"><img src="assets/img/hetty.png" onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/5f5e34b9-8c8b-4209-89ec-3ffb1d4d4b68'" alt="" style="width:254%;height:198.3%;left:-154%;top:-4.3%"></span></span>헤티톡</a>
+</nav>
+<script>
+// 추천 캐러셀: 시안처럼 가운데 카드가 중앙에 오도록 시작
+(function(){var t=document.getElementById('reco-track');if(t&&t.children[1]){t.scrollLeft=t.children[1].offsetLeft-(t.clientWidth-t.children[1].offsetWidth)/2;}})();
+</script>
+</body>
+</html>
