@@ -35,7 +35,7 @@ h1,h2,h3,p{font-weight:inherit;font-size:inherit}
 /* recommend carousel */
 .reco{padding-bottom:16px}
 .reco .track{height:400px;gap:12px;padding:0 calc(50% - 139.5px);align-items:flex-start;scroll-snap-type:x mandatory}
-.rcard{flex:none;width:279px;height:380px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--card-shadow);scroll-snap-align:center;display:flex;flex-direction:column}
+.rcard{scroll-snap-stop:always;flex:none;width:279px;height:380px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--card-shadow);scroll-snap-align:center;display:flex;flex-direction:column}
 .rcard .top{padding:16px 16px 0}
 .rcard .r1{display:flex;justify-content:space-between;align-items:flex-start}
 .rcard .when{display:flex;align-items:center;gap:12px}
@@ -66,7 +66,7 @@ h1,h2,h3,p{font-weight:inherit;font-size:inherit}
 .rcard .bot .l b{font-weight:700;font-size:16px;color:var(--ink2)}
 .dots{display:flex;justify-content:center;gap:4px;padding-right:16px}
 .dots i{width:5px;height:5px;border-radius:2.5px;background:#ccced1}
-.dots i.on{width:18px;background:var(--ink)}
+.dots i{transition:width .2s} .dots i.on{width:18px;background:var(--ink)}
 
 /* shared section bits */
 .sec{display:flex;flex-direction:column;gap:16px;padding:24px 16px}
