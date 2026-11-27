@@ -1,0 +1,119 @@
+/* 파인드머니 PC 홈 — 피그마 'PC 1920' 프레임 기준
+   · 내용은 1440(좌우 여백 40 → 본문 1360) 가운데 정렬
+   · 헤더 / 바디 / 푸터의 배경색만 화면 끝까지
+   · 추천 물건 캐러셀만 오른쪽 화면 끝까지 (최대 카드 3장) */
+
+:root {
+  --bg: #f4f6f8;
+  --white: #ffffff;
+  --ink: #1b1b1e;
+  --line: #e7ebee;
+  --dot-off: #ccced1;
+
+  --page: 1440px;          /* 내용 기준 폭 */
+  --content: 1360px;       /* 본문 폭 */
+  --intro-w: 515px;        /* 히어로 왼쪽 이미지 */
+  --hero-gap: 24px;
+  --card-w: 380px;         /* 캐러셀 카드 폭 */
+  --card-gap: 12px;
+  --max-cards: 3;          /* 화면이 넓어져도 최대 3장 */
+
+  /* 화면 폭 (1440보다 좁아지면 가로 스크롤) */
+  --vw: max(100vw, var(--page));
+  /* 캐러셀 왼쪽 끝의 화면 x 좌표 */
+  --carousel-left: calc((var(--vw) - var(--content)) / 2 + var(--intro-w) + var(--hero-gap));
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; min-width: var(--page); background: var(--bg); color: var(--ink);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+img { display: block; max-width: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+button { font: inherit; }
+
+.inner { width: var(--page); margin: 0 auto; }
+
+/* ---------- Header ---------- */
+.site-header { position: relative; background: var(--white); }
+/* 헤더 이미지 밖(1440 바깥)으로 이어지는 선 2개: 상단 바 아래, 내비게이션 아래 */
+.site-header::before,
+.site-header::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: var(--line); pointer-events: none; }
+.site-header::before { top: 100px; }
+.site-header::after  { bottom: 0; }
+
+/* ---------- Main ---------- */
+.site-main { overflow-x: clip; }   /* 캐러셀이 화면 밖으로 넘치는 부분만 잘라냄 */
+.band { width: var(--page); margin: 0 auto; }
+
+/* ---------- Hero ---------- */
+.hero { width: var(--content); margin: 0 auto; padding-top: 40px; }
+.hero-row { display: flex; gap: var(--hero-gap); height: 526px; }
+.hero-intro { flex: none; }
+
+/* ---------- Carousel ---------- */
+.carousel {
+  flex: none;
+  /* 화면 오른쪽 끝까지, 단 카드 3장 폭을 넘지 않게 */
+  width: min(
+    calc(var(--vw) - var(--carousel-left)),
+    calc(var(--card-w) * var(--max-cards) + var(--card-gap) * (var(--max-cards) - 1))
+  );
+  outline: none;
+}
+.carousel:focus-visible { outline: 2px solid #6067f6; outline-offset: 8px; border-radius: 28px; }
+
+/* 카드 그림자가 잘리지 않도록 위·아래·좌우에 여유를 두고, 좌우 끝은 살짝 흐리게 */
+.carousel-viewport {
+  overflow: hidden;
+  margin: -24px calc(var(--card-gap) * -1) -56px;
+  padding: 24px var(--card-gap) 56px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 var(--card-gap), #000 calc(100% - var(--card-gap)), transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0, #000 var(--card-gap), #000 calc(100% - var(--card-gap)), transparent 100%);
+  touch-action: pan-y;
+  cursor: grab;
+}
+.carousel-viewport.is-dragging { cursor: grabbing; }
+
+.carousel-track { display: flex; gap: var(--card-gap); will-change: transform; }
+.carousel-track.is-animating { transition: transform .45s cubic-bezier(.22, .8, .24, 1); }
+
+.slide { flex: none; width: var(--card-w); }
+.slide a { display: block; -webkit-user-drag: none; }
+/* 카드 이미지는 그림자 여백(좌우 40, 위 24, 아래 56)이 포함돼 있어 그만큼 바깥으로 뺌 */
+.slide img { margin: -24px -40px -56px; user-select: none; -webkit-user-select: none; pointer-events: none; }
+
+/* ---------- Carousel control ---------- */
+.carousel-control {
+  position: relative; z-index: 2;
+  display: flex; align-items: center; justify-content: center; gap: 48px;
+  width: 821px; margin: 18px 0 20px calc(var(--intro-w) + var(--hero-gap));
+  height: 44px;
+}
+.carousel-btn {
+  display: grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  border: 1px solid var(--line); border-radius: 50%; background: var(--white); cursor: pointer;
+  transition: border-color .15s, background-color .15s;
+}
+.carousel-btn:hover { border-color: #ccced1; background: #f8f9fa; }
+.carousel-btn:focus-visible { outline: 2px solid #6067f6; outline-offset: 2px; }
+
+.carousel-dots { display: flex; align-items: center; gap: 6px; }
+.carousel-dot {
+  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 4px; background: var(--dot-off); cursor: pointer;
+  transition: width .3s ease, background-color .3s ease;
+}
+.carousel-dot[aria-selected="true"] { width: 27px; background: var(--ink); }
+.carousel-dot:focus-visible { outline: 2px solid #6067f6; outline-offset: 3px; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--ink); }
+
+/* ---------- Floating 헤티톡 ---------- */
+/* 이미지에 그림자 여백(좌우 44, 위 28, 아래 58)이 있어, 버튼이 화면 끝에서 40px 떨어지도록 보정 */
+.floating-talk { position: fixed; right: -4px; bottom: -18px; z-index: 50; }
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track.is-animating { transition: none; }
+  .carousel-dot { transition: none; }
+}

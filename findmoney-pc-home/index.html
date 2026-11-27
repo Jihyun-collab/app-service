@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>파인드머니 | 분석부터 투자까지, 나만의 자산 관리 비법</title>
+  <meta name="description" content="경매 · 공매 물건의 권리 · 예상 수익 · 추천 입찰가를 한눈에. AI 비서 헤티가 알려드려요.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header : 배경은 화면 끝까지, 내용은 1440 가운데 ===== -->
+  <header class="site-header">
+    <div class="inner">
+      <img src="images/header.png" width="1440" height="180" alt="Find Money 헤더: 검색, 로그인, 회원가입, 홈, 탐색, 신규 물건, 지도로 보기, 경매 캘린더, 낙찰 브리핑, 무료상담, 커뮤니티">
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ===== Hero : 왼쪽 소개 이미지 + 오른쪽 추천 물건 캐러셀 ===== -->
+    <section class="hero" aria-label="오늘의 헤티 추천 물건">
+      <div class="hero-row">
+        <img class="hero-intro" src="images/hero-intro.png" width="515" height="520" alt="분석부터 투자까지 나만의 자산 관리 비법, AI 비서 헤티가 알려드려요. 앱에서 헤티가 먼저 알려드려요: Google Play, App Store">
+
+        <div class="carousel" id="recoCarousel" role="region" aria-roledescription="carousel" aria-label="헤티 추천 물건" tabindex="0">
+          <div class="carousel-viewport">
+            <!-- 카드를 늘리려면 <li class="slide"> 를 그대로 추가하세요. 점(dot)은 자동으로 맞춰집니다. -->
+            <ul class="carousel-track">
+              <li class="slide"><a href="#"><img src="images/card-1.png" width="460" height="601" alt="서울 서초동베스트원주건축물, D-6, 예상 수익 5억 3,337만원" draggable="false"></a></li>
+              <li class="slide"><a href="#"><img src="images/card-2.png" width="457" height="606" alt="경기 더베일리하우스, 공매, D-8, 예상 수익 2억 9,880만원" draggable="false"></a></li>
+              <li class="slide"><a href="#"><img src="images/card-3.png" width="457" height="606" alt="서울 서초동베스트원주건축물, D-6, 예상 수익 5억 3,337만원" draggable="false"></a></li>
+              <li class="slide"><a href="#"><img src="images/card-2.png" width="457" height="606" alt="경기 더베일리하우스, 공매, D-8, 예상 수익 2억 9,880만원" draggable="false"></a></li>
+              <li class="slide"><a href="#"><img src="images/card-1.png" width="460" height="601" alt="서울 서초동베스트원주건축물, D-6, 예상 수익 5억 3,337만원" draggable="false"></a></li>
+              <li class="slide"><a href="#"><img src="images/card-2.png" width="457" height="606" alt="경기 더베일리하우스, 공매, D-8, 예상 수익 2억 9,880만원" draggable="false"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-control" aria-controls="recoCarousel">
+        <button type="button" class="carousel-btn" data-dir="prev" aria-label="이전 물건">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 6l-6 6 6 6" stroke="#1b1b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel-dots" role="tablist" aria-label="추천 물건 순서"></div>
+        <button type="button" class="carousel-btn" data-dir="next" aria-label="다음 물건">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6l6 6-6 6" stroke="#1b1b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== 아래 섹션은 모두 이미지 ===== -->
+    <div class="band"><img src="images/sec-1-search.png"    width="1440" height="318" alt="진행 물건 985건, 오늘 신규 58건, 이번 주 입찰 975건. 지역 · 용도로 찾기. 나한테 딱 맞는 물건을 바로 찾아볼까요? 파인드머니는 처음이신가요?"></div>
+    <div class="band"><img src="images/sec-2-category.png"  width="1440" height="224" alt="10가지 종류 골라 보기: 아파트, 빌라, 단독·다가구, 오피스텔, 상가·업무, 공장·창고, 토지, 차량, 중장비, 전체" loading="lazy"></div>
+    <div class="band"><img src="images/sec-3-popular.png"   width="1440" height="480" alt="지금 인기있는 물건" loading="lazy"></div>
+    <div class="band"><img src="images/sec-4-lists.png"     width="1440" height="353" alt="소액으로 가능한 물건, 감정가 반값 이하 물건, 오늘 새로 나온 물건" loading="lazy"></div>
+    <div class="band"><img src="images/sec-5-market.png"    width="1440" height="726" alt="경매 시장 한눈에: 낙찰 브리핑, 헤티 수익 판정 적중률 93.5%, 이번 주 입찰된 물건, 지역별 경매 물건, 낙찰가율" loading="lazy"></div>
+    <div class="band"><img src="images/sec-6-guide.png"     width="1440" height="491" alt="경매, 처음이어도 괜찮아요: 처음이라면 이 순서로, 경매 무료상담, 유용한 경매 영상" loading="lazy"></div>
+    <div class="band"><img src="images/sec-7-recommend.png" width="1440" height="248" alt="내가 원하는 물건만, 헤티에게 추천받기" loading="lazy"></div>
+
+  </main>
+
+  <!-- ===== Footer : 배경은 화면 끝까지 ===== -->
+  <footer class="site-footer">
+    <div class="inner">
+      <img src="images/footer.png" width="1440" height="381" alt="Find Money 나만의 자산관리. ㈜에이치엔에스커뮤니케이션 사업자 정보" loading="lazy">
+    </div>
+  </footer>
+
+  <!-- 화면 오른쪽 아래에 떠 있는 헤티톡 버튼 -->
+  <a class="floating-talk" href="#" aria-label="헤티톡 열기">
+    <img src="images/floating-hetytalk.png" width="236" height="176" alt="">
+  </a>
+
+  <script src="js/carousel.js"></script>
+</body>
+</html>
